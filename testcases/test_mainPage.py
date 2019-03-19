@@ -1,15 +1,16 @@
 import unittest
-import TwitterMainPage
+import pageobjects.TwitterMainPage
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Chrome()
         self.driver.get("https://twitter.com/?lang=en")
 
     def test_search_in_python_org(self):
+        pass
     
     def tearDown(self):
         self.driver.quit()
